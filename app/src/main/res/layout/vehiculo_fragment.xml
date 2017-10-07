@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Vehículo"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:hint="Placa"
+                android:id="@+id/edit_vehiculo_placa"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+            <EditText
+                android:hint="Modelo"
+                android:lines="1"
+                android:id="@+id/edit_vehiculo_modelo"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+            <EditText
+                android:hint="Año"
+                android:id="@+id/edit_vehiculo_año"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+            <EditText
+                android:hint="Cédula Propietario"
+                android:id="@+id/edit_vehiculo_cedula"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_vehiculo_insertar"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:text="Insertar"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_vehiculo_buscar"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:text="Buscar"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Alterar"
+            android:id="@+id/btn_vehiculo_alterar"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/btn_vehiculo_eliminar"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:onClick="onEliminar"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
